@@ -12,4 +12,9 @@ const canAccess = currentRoles.some((role) => featureAccess.includes(role));
 
 // part3
 const arr = Array.from({ length: 5 }, (_, i) => i * i);
-console.log(arr);
+// console.log(arr);
+
+// part4
+const range = (start, stop, step) => Array.from({length: Math.ceil((stop - start) / step)},(_, i) => start + i * step);
+// console.log(range(0, 10, 2));
+console.log(range(1, 11, 3));
